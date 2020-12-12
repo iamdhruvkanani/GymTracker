@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entry.TrackEntryFragment"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg"
+
+
+            android:focusable="auto"
+            android:fontFamily="serif"
+            android:hint="@string/userName"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/userWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_bg"
+
+
+        android:focusable="auto"
+        android:fontFamily="serif"
+        android:hint="@string/userWeight"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/userHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_bg"
+        android:focusable="auto"
+        android:fontFamily="serif"
+        android:hint="@string/userHeight"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="Select Type Of Excercise : "/>
+    <RadioGroup
+        android:id="@+id/excercise_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/walk_button"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/run_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/track_run"
+            android:textColor="#ffff"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/walk_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/track_walk"
+            android:textColor="#ffff"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/bike_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/track_bike"
+            android:textColor="#ffff"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <EditText
+        android:id="@+id/userCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_bg"
+
+
+        android:focusable="auto"
+        android:fontFamily="serif"
+        android:hint="@string/userCal"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/userDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_bg"
+        android:layout_marginLeft="10dp"
+
+        android:focusable="auto"
+        android:fontFamily="serif"
+        android:hint="@string/userDistance"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp" />
+    </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/custom_ripple"
+        android:backgroundTint="#27D50000"
+        android:clickable="true"
+        android:fontFamily="serif"
+        android:foreground="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="@string/btnNext"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/custom_ripple"
+        android:backgroundTint="#27D50000"
+        android:clickable="true"
+        android:fontFamily="serif"
+        android:foreground="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="@string/btnCancel"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+</LinearLayout>
+</ScrollView>

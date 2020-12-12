@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GymTracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <string name="track_run">Running</string>
+    <string name="track_walk">Walking</string>
+    <string name="track_bike">Biking</string>
+    <string name="delete">delete</string>
+    <string name="userName">Name</string>
+    <string name="userHeight">Height</string>
+    <string name="userWeight">Weight</string>
+    <string name="userCal">Calories Burnt</string>
+    <string name="userDistance">Distance Travelled</string>
+    <string name="btnNext">Next</string>
+    <string name="btnCancel">Cancel</string>
+
+
+
+
+
+    <string name="static_shortcut_label_short">New Track</string>
+    <string name="static_shortcut_label_long">Create New Track</string>
+    <string name="static_shortcut_disabled_message">New Track Shortcut Disabled</string>
+    <string name="notificationDescription">Notifications from GymTracker</string>
+    <string name="addTrackInfo">Add more track info!</string>
+    <string name="deepLinkNotificationTitle">Deep Link</string>
+    <string name="defaultChannel">GymTracker default channel</string>
+</resources>
